@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heavy Metal - Encyclopédie du Metal</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link id="stylesheet" rel="stylesheet" href="style1.css"> <!-- Assurez-vous de lier le bon style CSS ici -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Heavy Metal - Encyclopédie du Metal</h1>
+        <button id="retourBtn">Retour</button>
+        <script>
+            // Vérifiez si un thème est déjà sélectionné dans le localStorage
+            var theme = localStorage.getItem('theme');
+            if(theme === 'sombre') {
+                document.getElementById("stylesheet").href = "style1.css";
+            } else if(theme === 'clair') {
+                document.getElementById("stylesheet").href = "style2.css";
+            }
+        </script>
+    </header>
+
+    <section>
+        <h2>Heavy Metal - Un aperçu</h2>
+        <p>Le Heavy Metal est un genre de musique très influent et diversifié, caractérisé par des guitares puissantes, des rythmes rapides, et souvent des paroles sombres ou fantasy. Voici quelques points clés à retenir sur ce genre :</p>
+        <ul>
+            <li>Origines : Le Heavy Metal est apparu dans les années 1970, principalement en Grande-Bretagne et aux États-Unis. Des groupes comme Black Sabbath, Led Zeppelin, et Deep Purple sont souvent considérés comme des pionniers du genre.</li>
+            <li>Évolution : Au fil des décennies, le Heavy Metal s'est diversifié en de nombreux sous-genres, tels que le Thrash Metal, le Power Metal, le Doom Metal, et bien d'autres.</li>
+            <li>Impact culturel : Le Heavy Metal a eu un impact significatif sur la culture populaire, influençant non seulement la musique, mais aussi la mode, l'art et le cinéma.</li>
+            <li>Communauté : Le Heavy Metal est également connu pour sa forte communauté de fans dévoués, qui participent à des festivals, des concerts et des forums en ligne pour discuter et célébrer la musique.</li>
+        </ul>
+        <p>Explorez davantage les différents aspects du Heavy Metal à travers notre encyclopédie, où vous trouverez des articles sur les artistes, les albums, les sous-genres, et bien plus encore.</p>
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <div class="footer-content">
+            <p>Metalopédia &copy; Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

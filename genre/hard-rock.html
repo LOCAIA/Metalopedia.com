@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Rock - Encyclopédie du Hard Rock</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link id="stylesheet" rel="stylesheet" href="style1.css"> <!-- Assurez-vous de lier le bon style CSS ici -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Hard Rock - Encyclopédie du Hard Rock</h1>
+        <button id="retourBtn">Retour</button>
+        <script>
+            // Vérifiez si un thème est déjà sélectionné dans le localStorage
+            var theme = localStorage.getItem('theme');
+            if(theme === 'sombre') {
+                document.getElementById("stylesheet").href = "style1.css";
+            } else if(theme === 'clair') {
+                document.getElementById("stylesheet").href = "style2.css";
+            }
+        </script>
+    </header>
+
+    <section>
+        <h2>Hard Rock - Un aperçu</h2>
+        <p>Le Hard Rock est un genre musical dérivé du rock, caractérisé par des sonorités agressives, des riffs de guitare puissants et une attitude rebelle. Voici quelques points clés à retenir sur ce genre :</p>
+        <ul>
+            <li>Origines : Le Hard Rock a émergé dans les années 1960 et 1970, principalement aux États-Unis et au Royaume-Uni. Des groupes tels que Led Zeppelin, Deep Purple et AC/DC ont contribué à populariser le genre.</li>
+            <li>Évolution : Au fil du temps, le Hard Rock s'est développé en incorporant des éléments du blues, du rock 'n' roll et du heavy metal, donnant naissance à des sous-genres tels que le glam rock et le sleaze rock.</li>
+            <li>Influence culturelle : Le Hard Rock a eu un impact majeur sur la culture populaire, influençant la mode, le langage, et la perception de la musique rock dans son ensemble.</li>
+            <li>Communauté : Le Hard Rock a construit une communauté de fans passionnés, qui ont contribué à son succès continu à travers des concerts, des événements et des publications dédiées.</li>
+        </ul>
+        <p>Explorez davantage les différents aspects du Hard Rock à travers notre encyclopédie, où vous trouverez des articles sur les artistes, les albums, les concerts et bien plus encore.</p>
+    </section>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <div class="footer-content">
+            <p>Rockopédia &copy; Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

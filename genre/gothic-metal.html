@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gothic Metal - Encyclopédie du Gothic Metal</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link id="stylesheet" rel="stylesheet" href="style1.css"> <!-- Assurez-vous de lier le bon style CSS ici -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Gothic Metal - Encyclopédie du Gothic Metal</h1>
+        <button id="retourBtn">Retour</button>
+        <script>
+            // Vérifiez si un thème est déjà sélectionné dans le localStorage
+            var theme = localStorage.getItem('theme');
+            if(theme === 'sombre') {
+                document.getElementById("stylesheet").href = "style1.css";
+            } else if(theme === 'clair') {
+                document.getElementById("stylesheet").href = "style2.css";
+            }
+        </script>
+    </header>
+
+    <section>
+        <h2>Gothic Metal - Un aperçu</h2>
+        <p>Le gothic metal est un sous-genre du metal caractérisé par son atmosphère sombre, ses mélodies mélancoliques, et l'usage fréquent de chant féminin lyrique et de voix masculines gutturales. Voici quelques points clés à retenir sur ce genre :</p>
+        <ul>
+            <li>Origines : Le gothic metal émerge dans les années 1990, influencé par des groupes comme Paradise Lost, Theatre of Tragedy, et Tiamat, qui mélangeaient les éléments du doom metal avec des sonorités gothiques.</li><br><br><br><br>
+            <li>Caractéristiques musicales : Le gothic metal se caractérise par ses riffs de guitare lourds et mélodiques, ses atmosphères sombres et romantiques, ses claviers atmosphériques, et son utilisation de voix féminines lyriques et masculines gutturales ou claires.</li><br><br><br><br>
+            <li>Thèmes : Les paroles du gothic metal explorent souvent des thèmes liés à la romance, à la mélancolie, à la mort, et au surnaturel, s'inspirant souvent de la littérature gothique et des œuvres artistiques sombres.</li><br><br><br><br>
+            <li>Évolution : Au fil du temps, le gothic metal a évolué pour incorporer une gamme plus large de styles, incluant des éléments de symphonic metal, de folk metal, et même d'electronica, tout en conservant son esthétique sombre et romantique.</li><br><br><br><br>
+        </ul>
+        <p>Explorez davantage les différents aspects du gothic metal à travers notre encyclopédie, où vous trouverez des articles sur les artistes, les albums, les concerts et bien plus encore.</p>
+    </section>
+
+    <aside>
+        <p>Les utilisateurs recherchent aussi :</p><br>
+        <ul>
+            <a href="symphonic-metal.html">Symphonic Metal</a>
+            <a href="doom-metal.html">Doom Metal</a>
+            <a href="industrial-metal.html">Industrial Metal</a>
+            <br>
+            <!-- Ajoutez d'autres liens vers des pages de genres de métal similaires si nécessaire -->
+        </ul>
+    </aside>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>Metalopédia &copy; Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
