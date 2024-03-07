@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nu Metal - Encyclopédie du Nu Metal</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link id="stylesheet" rel="stylesheet" href="style1.css"> <!-- Assurez-vous de lier le bon style CSS ici -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nu Metal - Encyclopédie du Nu Metal</h1>
+        <button id="retourBtn">Retour</button>
+        <script>
+            // Vérifiez si un thème est déjà sélectionné dans le localStorage
+            var theme = localStorage.getItem('theme');
+            if(theme === 'sombre') {
+                document.getElementById("stylesheet").href = "style1.css";
+            } else if(theme === 'clair') {
+                document.getElementById("stylesheet").href = "style2.css";
+            }
+        </script>
+    </header>
+
+    <section>
+        <h2>Nu Metal - Un aperçu</h2>
+        <p>Le nu metal est un sous-genre du heavy metal qui combine des éléments de metal avec d'autres styles tels que le hip-hop, le funk, le punk et l'industriel, créant ainsi un son agressif et rythmé. Voici quelques points clés à retenir sur ce genre :</p>
+        <ul>
+            <li>Origines : Le nu metal a émergé dans les années 1990, avec des groupes comme Korn, Limp Bizkit et Deftones parmi les premiers à populariser le genre, en fusionnant les influences du metal avec celles du rap et du funk.</li><br><br><br><br>
+            <li>Caractéristiques musicales : Le nu metal se caractérise par ses riffs de guitare lourds et groovy, ses rythmes syncopés, ses vocaux souvent rapides et agressifs, ainsi que par l'utilisation de techniques de DJ et de samples.</li><br><br><br><br>
+            <li>Influence culturelle : Le nu metal a eu un impact majeur sur la culture populaire des années 1990 et 2000, inspirant une nouvelle génération de musiciens et influençant divers aspects de la mode, du cinéma et des médias.</li><br><br><br><br>
+            <li>Controverses : Le nu metal a été associé à diverses controverses, notamment en raison de ses paroles provocantes, de ses performances scéniques chaotiques et de ses excès en matière de drogue et d'alcool.</li><br><br><br><br>
+        </ul>
+        <p>Explorez davantage les différents aspects du nu metal à travers notre encyclopédie, où vous trouverez des articles sur les artistes, les albums, les concerts et bien plus encore.</p>
+
+        <h2>Anecdotes sur Slipknot</h2>
+        <ol>
+            <li>Slipknot a été formé en 1995 à Des Moines, Iowa, par le batteur Shawn Crahan et le percussionniste Joey Jordison, qui se sont rencontrés dans un groupe local appelé "Modifidious".</li>
+            <li>Sur l’intro de la chanson 515 (c’est l’indicatif de l’Iowa), présent sur le deuxième album du groupe Iowa (2001), on peut entendre Sid Wilson (DJ) hurler « Death ». Il venait d’apprendre la mort de son grand père.                .</li>
+            <li>Slipknot est célèbre pour ses performances scéniques intenses et visuellement spectaculaires, caractérisées par des masques effrayants et des combinaisons uniques pour chaque membre.</li>
+            <li>Le groupe est également connu pour son recrutement de nouveaux membres sous des pseudonymes numérotés, ce qui ajoute à leur mystère et à leur aura d'anarchie.</li>
+            <li>Slipknot etait aussi connu pour leurs bizarreries: avant chaques concerts, ils reniflais un corbeau mort dans un bocale, sa leurs servirais à "se rapprocher de la mort".</li>
+        </ol>
+    </section>
+
+    <aside>
+        <p>Les utilisateurs recherchent aussi :</p><br>
+        <ul>
+            <a href="hard-rock.html">Hard Rock</a>
+            <a href="industrial-metal.html">Industrial Metal</a>
+            <br>
+            <!-- Ajoutez d'autres liens vers des pages de genres de métal similaires si nécessaire -->
+        </ul>
+    </aside>
+    <

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressive Metal - Encyclopédie du Progressive Metal</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link id="stylesheet" rel="stylesheet" href="style1.css"> <!-- Assurez-vous de lier le bon style CSS ici -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Progressive Metal - Encyclopédie du Progressive Metal</h1>
+        <button id="retourBtn">Retour</button>
+        <script>
+            // Vérifiez si un thème est déjà sélectionné dans le localStorage
+            var theme = localStorage.getItem('theme');
+            if(theme === 'sombre') {
+                document.getElementById("stylesheet").href = "style1.css";
+            } else if(theme === 'clair') {
+                document.getElementById("stylesheet").href = "style2.css";
+            }
+        </script>
+    </header>
+
+    <section>
+        <h2>Progressive Metal - Un aperçu</h2>
+        <p>Le progressive metal, également connu sous le nom de prog metal, est un sous-genre du heavy metal caractérisé par son approche complexe de la composition musicale, son utilisation étendue des signatures rythmiques non conventionnelles et ses thèmes lyriques souvent introspectifs et philosophiques. Voici quelques points clés à retenir sur ce genre :</p>
+        <ul>
+            <li>Origines : Le progressive metal trouve ses origines dans les années 1980, avec des groupes comme Queensrÿche, Fates Warning et Dream Theater parmi les pionniers du genre, cherchant à fusionner la virtuosité du rock progressif avec l'intensité du heavy metal.</li><br><br><br><br>
+            <li>Caractéristiques musicales : Le progressive metal se caractérise par ses structures de chansons complexes, ses arrangements instrumentaux élaborés, ses solos de guitare virtuoses, ses claviers atmosphériques et ses vocaux polyvalents, allant du chant mélodique aux growls.</li><br><br><br><br>
+            <li>Innovation : Le progressive metal est souvent associé à l'innovation musicale et à l'expérimentation, explorant de nouvelles sonorités, techniques et concepts musicaux, et repoussant les limites de ce que le heavy metal peut accomplir sur le plan artistique et technique.</li><br><br><br><br>
+            <li>Diversité : Le progressive metal englobe une grande diversité de styles et d'approches, allant du metal atmosphérique et cinématique au metal mathématique et technique, offrant ainsi une expérience musicale riche et stimulante pour les auditeurs.</li><br><br><br><br>
+        </ul>
+        <p>Explorez davantage les différents aspects du progressive metal à travers notre encyclopédie, où vous trouverez des articles sur les artistes, les albums, les concerts et bien plus encore.</p>
+    </section>
+
+    <aside>
+        <p>Les utilisateurs recherchent aussi :</p><br>
+        <ul>
+            <a href="thrash-metal.html">Thrash Metal</a>
+            <br>
+            <!-- Ajoutez d'autres liens vers des pages de genres de métal similaires si nécessaire -->
+        </ul>
+    </aside>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>Metalopédia &copy; Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
