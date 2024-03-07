@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symphonic Metal - Encyclopédie du Symphonic Metal</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link id="stylesheet" rel="stylesheet" href="style1.css"> <!-- Assurez-vous de lier le bon style CSS ici -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Symphonic Metal - Encyclopédie du Symphonic Metal</h1>
+        <button id="retourBtn">Retour</button>
+        <script>
+            // Vérifiez si un thème est déjà sélectionné dans le localStorage
+            var theme = localStorage.getItem('theme');
+            if(theme === 'sombre') {
+                document.getElementById("stylesheet").href = "style1.css";
+            } else if(theme === 'clair') {
+                document.getElementById("stylesheet").href = "style2.css";
+            }
+        </script>
+    </header>
+
+    <section>
+        <h2>Symphonic Metal - Un aperçu</h2>
+        <p>Le symphonic metal est un sous-genre du heavy metal qui intègre des éléments de musique classique, comme des orchestres symphoniques ou des arrangements orchestraux, dans sa musique, créant ainsi une atmosphère épique et grandiose. Voici quelques points clés à retenir sur ce genre :</p>
+        <ul>
+            <li>Origines : Le symphonic metal trouve ses origines dans les années 1990, avec des groupes comme Nightwish, Within Temptation et Therion parmi les premiers à populariser le genre, en combinant la puissance du metal avec la grandeur de la musique classique.</li><br><br><br><br>
+            <li>Caractéristiques musicales : Le symphonic metal se caractérise par l'utilisation d'arrangements orchestraux ou de synthétiseurs symphoniques, ainsi que par des mélodies grandioses, des chœurs épiques et des vocaux lyriques, souvent féminins, juxtaposés avec des guitares lourdes et des rythmes puissants.</li><br><br><br><br>
+            <li>Thèmes : Les paroles du symphonic metal explorent souvent des thèmes fantastiques, mythologiques ou historiques, ajoutant une dimension narrative et théâtrale à la musique.</li><br><br><br><br>
+            <li>Influence : Le symphonic metal a influencé de nombreux autres genres musicaux, notamment le gothic metal, le power metal et même des genres non métalliques comme la musique de film, en raison de son utilisation innovante des orchestrations et de son atmosphère cinématographique.</li><br><br><br><br>
+        </ul>
+        <p>Explorez davantage les différents aspects du symphonic metal à travers notre encyclopédie, où vous trouverez des articles sur les artistes, les albums, les concerts et bien plus encore.</p>
+    </section>
+
+    <aside>
+        <p>Les utilisateurs recherchent aussi :</p><br>
+        <ul>
+            <a href="gothic-metal.html">Gothic Metal</a>
+            <a href="power-metal.html">Power Metal</a>
+            <a href="folk-metal.html">Folk Metal</a>
+            <br>
+            <!-- Ajoutez d'autres liens vers des pages de genres de métal similaires si nécessaire -->
+        </ul>
+    </aside>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>Metalopédia &copy; Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
