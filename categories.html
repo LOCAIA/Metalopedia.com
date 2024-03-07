@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catégories</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link id="stylesheet" rel="stylesheet" href="style1.css"> <!-- Assurez-vous de lier le bon style CSS ici -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Métalopédia - Catégories</h1>
+        <button id="HomeButton" type="button">Accueil</button>
+        <button id="ParametreButton" type="button">Paramètres</button>
+        <button id="AideButton" type="button">Aide</button>
+        <button id="CategoriesButton" type="button">Catégories</button>
+        <label for="search"></label>
+        <input type="text" id="search" placeholder="Rechercher un genre:">
+        <script>
+            // Vérifiez si un thème est déjà sélectionné dans le localStorage
+            var theme = localStorage.getItem('theme');
+            if(theme === 'sombre') {
+                document.getElementById("stylesheet").href = "style1.css";
+            } else if(theme === 'clair') {
+                document.getElementById("stylesheet").href = "style2.css";
+            }
+        </script>
+    </header>
+
+    <section>
+        <h2>Explorez les catégories de Metalopédia</h2>
+
+        <div id="genres">
+            <div class="genre" data-genre="hard-rock ad/dc ac dc"><a href="genre/hard-rock.html">Hard Rock</a></div>
+            <div class="genre" data-genre="heavy-metal black sabbath ozzy osbourne metallica"><a href="genre/heavy-metal.html">Heavy Metal</a></div>
+            <div class="genre" data-genre="thrash-metal megadeth slayer metallica"><a href="genre/thrash-metal.html">Thrash Metal</a></div>
+            <div class="genre" data-genre="death-metal cannibal corpse lamb of god"><a href="genre/death-metal.html">Death Metal</a></div>
+            <div class="genre" data-genre="black-metal mayhem burzum bathory satan satanist"><a href="genre/black-metal.html">Black Metal</a></div>
+            <div class="genre" data-genre="power-metal"><a href="genre/power-metal.html">Power Metal</a></div>
+            <div class="genre" data-genre="doom-metal satan satanist"><a href="genre/doom-metal.html">Doom Metal</a></div>
+            <div class="genre" data-genre="progressive-metal"><a href="genre/progressive-metal.html">Progressive Metal</a></div>
+            <div class="genre" data-genre="folk-metal"><a href="genre/folk-metal.html">Folk Metal</a></div>
+            <div class="genre" data-genre="nu-metal slipknot korn limp bizkit"><a href="genre/nu-metal.html">Nu Metal</a></div>
+            <div class="genre" data-genre="synphonic-metal"><a href="genre/synphonic-metal.html">Synphonic Metal</a></div>
+            <div class="genre" data-genre="brutal-death-metal cannibal corpse mortician "><a href="genre/brutal-deat-metal.html">Brutal Death Metal</a></div>
+            <div class="genre" data-genre="DSBM depressive suicidal black metal"><a href="genre/dsbm.html">DSBM</a></div>
+            <div class="genre" data-genre="goth gothic gothic metal"><a href="genre/gothic-metal.html">Gothic Metal</a></div>
+            <div class="genre" data-genre="stone stoner metal"><a href="genre/stoner-metal.html">Stoner Metal</a></div>
+            <div class="genre" data-genre="industrial metal"><a href="genre/industrial-metal.html">Industrial Metal</a></div>
+            <!-- Ajoutez d'autres genres avec le même format -->
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <p id="noResults" style="display: none; color: red;">Aucun résultat trouvé. vérifiez l'ortographe.</p>
+        <br>
+        <br>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>Metalopédia &copy; Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion de la recherche de genre
+        document.getElementById("search").addEventListener("input", function() {
+            var searchValue = this.value.toLowerCase();
+            var genres = document.querySelectorAll(".genre");
+            var noResultsMessage = document.getElementById("noResults");
+            var foundResults = false;
+            genres.forEach(function(genre) {
+                var genreName = genre.dataset.genre.toLowerCase();
+                if (genreName.includes(searchValue)) {
+                    genre.style.display = "block";
+                    foundResults = true;
+                } else {
+                    genre.style.display = "none";
+                }
+            });
+
+            if (!foundResults) {
+                noResultsMessage.style.display = "block";
+            } else {
+                noResultsMessage.style.display = "none";
+            }
+        });
+    </script></body>
+</html>
