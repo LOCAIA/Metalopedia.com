@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSBM - Encyclopédie du Depressive Suicidal Black Metal</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link id="stylesheet" rel="stylesheet" href="style1.css"> <!-- Assurez-vous de lier le bon style CSS ici -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>DSBM - Encyclopédie du Depressive Suicidal Black Metal</h1>
+        <button id="retourBtn">Retour</button>
+        <script>
+            // Vérifiez si un thème est déjà sélectionné dans le localStorage
+            var theme = localStorage.getItem('theme');
+            if(theme === 'sombre') {
+                document.getElementById("stylesheet").href = "style1.css";
+            } else if(theme === 'clair') {
+                document.getElementById("stylesheet").href = "style2.css";
+            }
+        </script>
+    </header>
+
+    <section>
+        <h2>DSBM - Un aperçu</h2>
+        <p>Le Depressive Suicidal Black Metal (DSBM) est un sous-genre du black metal caractérisé par des thèmes lyriques sombres et introspectifs, souvent centrés sur la dépression, le désespoir et la mort. Voici quelques points clés à retenir sur ce genre :</p>
+        <ul>
+            <li>Origines : Le DSBM émerge dans les années 1990, influencé par des groupes comme Xasthur, Silencer et Shining, qui ont introduit des éléments de tristesse et de désespoir dans le black metal traditionnel.</li><br><br><br><br>
+            <li>Caractéristiques musicales : Le DSBM se caractérise par des riffs de guitare mélancoliques, des vocaux plaintifs ou hurlants, des atmosphères lugubres et des tempos lents à moyens, créant ainsi une ambiance oppressante et introspective.</li><br><br><br><br>
+            <li>Thèmes : Les paroles du DSBM explorent souvent des thèmes liés à la douleur émotionnelle, à la solitude, à la perte et au suicide, reflétant les luttes personnelles et les tourments intérieurs des artistes.</li><br><br><br><br>
+            <li>Influence : Bien que le DSBM reste un sous-genre relativement niche, il a influencé d'autres genres de metal ainsi que des formes d'expression artistique en dehors de la musique, en mettant en lumière les questions de santé mentale et de bien-être émotionnel.</li><br><br><br><br>
+        </ul>
+        <p>Explorez davantage les différents aspects du DSBM à travers notre encyclopédie, où vous trouverez des articles sur les artistes, les albums, les concerts et bien plus encore.</p>
+    </section>
+
+    <aside>
+        <p>Les utilisateurs recherchent aussi :</p><br>
+        <ul>
+            <a href="black-metal.html">Black Metal</a>
+            <br>
+            <!-- Ajoutez d'autres liens vers des pages de genres de métal similaires si nécessaire -->
+        </ul>
+    </aside>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>Metalopédia &copy; Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

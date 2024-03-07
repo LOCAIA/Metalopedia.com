@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brutal Death Metal - Encyclopédie du Brutal Death Metal</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link id="stylesheet" rel="stylesheet" href="style1.css"> <!-- Assurez-vous de lier le bon style CSS ici -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Brutal Death Metal - Encyclopédie du Brutal Death Metal</h1>
+        <button id="retourBtn">Retour</button>
+        <script>
+            // Vérifiez si un thème est déjà sélectionné dans le localStorage
+            var theme = localStorage.getItem('theme');
+            if(theme === 'sombre') {
+                document.getElementById("stylesheet").href = "style1.css";
+            } else if(theme === 'clair') {
+                document.getElementById("stylesheet").href = "style2.css";
+            }
+        </script>
+    </header>
+
+    <section>
+        <h2>Brutal Death Metal - Un aperçu</h2>
+        <p>Le brutal death metal est un sous-genre extrême du death metal caractérisé par sa brutalité sonore, ses tempos rapides, ses riffs techniques et ses vocaux gutturaux. Voici quelques points clés à retenir sur ce genre :</p>
+        <ul>
+            <li>Origines : Le brutal death metal émerge dans les années 1990, principalement influencé par des groupes comme Cannibal Corpse, Suffocation et Deeds of Flesh, cherchant à pousser les limites de l'agressivité musicale.</li><br><br><br><br>
+            <li>Caractéristiques musicales : Le brutal death metal se caractérise par ses tempos extrêmement rapides, ses riffs de guitare techniques, ses solos virtuoses, ses vocaux gutturaux et ses paroles souvent centrées sur des thèmes macabres, la violence et la mort.</li><br><br><br><br>
+            <li>Technicité : La virtuosité instrumentale est un élément clé du brutal death metal, avec des musiciens adeptes de techniques avancées telles que le blast beat, le tapping et le sweeping, créant ainsi une musique complexe et intense.</li><br><br><br><br>
+            <li>Scène underground : Le brutal death metal reste largement ancré dans la scène underground, avec une base de fans dédiée et une communauté qui valorise l'authenticité, l'extrémisme et l'innovation musicale.</li><br><br><br><br>
+        </ul>
+        <p>Explorez davantage les différents aspects du brutal death metal à travers notre encyclopédie, où vous trouverez des articles sur les artistes, les albums, les concerts et bien plus encore.</p>
+    </section>
+
+    <aside>
+        <p>Les utilisateurs recherchent aussi :</p><br>
+        <ul>
+            <a href="death-metal.html">Death Metal</a>
+            <a href="technical-death-metal.html">Black Metal</a>
+            <a href="dsbm.html">DSBM</a>
+            <br>
+            <!-- Ajoutez d'autres liens vers des pages de genres de métal similaires si nécessaire -->
+        </ul>
+    </aside>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>Metalopédia &copy; Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
