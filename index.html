@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metalopédia</title>
+    <link id="stylesheet" rel="stylesheet" href="style1.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Metalopédia</h1>
+        <button id="HomeButton" type ="button">Accueil</button>
+        <button id="ParametreButton" type ="button">Paramètres</button>
+        <button id="AideButton" type ="button">Aide</button>
+        <button id="CategoriesButton" type ="button">Catégories</button>
+        <script>
+            // Vérifiez si un thème est déjà sélectionné dans le localStorage
+            var theme = localStorage.getItem('theme');
+            if(theme === 'sombre') {
+                document.getElementById("stylesheet").href = "style1.css";
+            } else if(theme === 'clair') {
+                document.getElementById("stylesheet").href = "style2.css";
+            }
+        </script>
+    </header>
+    <br>
+    <br>
+    <br>
+    <section>
+        <h2>Bienvenue !</h2>
+        <p>Bienvenue sur Metalopédia ! L'encyclopédie du Metal !</p>
+        <p>Explorez les <a href="categories.html">catégories</a> pour parcourir les genres musicaux !</p>
+        <p>Si vous avez repéré une erreur, <a href="aide.html">signalez-le nous</a> ! On résoudra votre problème</p>
+        <hr>
+        <br>
+        <br>
+    </section>
+    <br>
+    <br>
+    <footer>
+        <div class="footer-content">
+            <p>Metalopédia &copy; Tout droits réservés.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
